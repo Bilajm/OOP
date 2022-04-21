@@ -18,6 +18,7 @@ int main(/*int argc, char* argv[]*/) {
 */
     ifstream ifst(R"(D:\Study\ProgrammTehnology\Lab1\OOP\In.txt)");
     ofstream ofst(R"(D:\Study\ProgrammTehnology\Lab1\OOP\Out.txt)");
+
     cout << "Start"<< endl;
     container c;
     c.In(ifst);

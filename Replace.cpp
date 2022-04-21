@@ -17,12 +17,12 @@ string replace::transform(string otext, vector<pair<char, char>> A) {
             chektoup = true;
             otext[i] = tolower(otext[i]);
         }
-        for (int j = 0; j < A.size(); j++) {
-            if (otext[i] == A[j].first) {
-                if (chektoup == true) {
-                    rtext.push_back(toupper(A[j].second));
+        for (auto & j : A) {
+            if (otext[i] == j.first) {
+                if (chektoup) {
+                    rtext.push_back(toupper(j.second));
                 } else {
-                    rtext.push_back(A[j].second);
+                    rtext.push_back(j.second);
                 }
                 cheknovec = false;
                 continue;
@@ -30,7 +30,7 @@ string replace::transform(string otext, vector<pair<char, char>> A) {
         }
         if (chektoup && cheknovec) {
             rtext.push_back(toupper(otext[i]));
-        } else if ((chektoup == false) && cheknovec) {
+        } else if (!chektoup && cheknovec) {
             rtext.push_back(otext[i]);
         }
 

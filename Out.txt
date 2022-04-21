@@ -1,11 +1,22 @@
 Filled container. 
-Container 2 elements.
-0: Input text:  Hello, world!
+Container 5 elements.
+0: Input text: Hello, world!
 Shift: 4
-Output text:  Lipps, asvph!
-1: Input text:  Hello, world!
+Output text: Lipps, asvph!
+1: Input text: Hello, world!
 Starting characters: h e l o w r d 
 End symbols:         w r d h e l o 
-Output text:  Wrddh, ehldo!
+Output text: Wrddh, ehldo!
+2: Input text: ABC
+Shift: 5
+Output text: FGH
+3: Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+4: Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
 Empty container. 
 Container 0 elements.

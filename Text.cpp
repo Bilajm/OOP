@@ -1,5 +1,6 @@
 #include "Text.h"
 #include "Replace.h"
+#include "Intreplace.h"
 #include "Shift.h"
 
 using namespace std;
@@ -15,6 +16,9 @@ text* text::In(ifstream &ifst) {
             break;
         case 2:
             sp = new replace;
+            break;
+        case 3:
+            sp = new intreplace;
             break;
         default:
             return nullptr;

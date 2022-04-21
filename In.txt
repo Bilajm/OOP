@@ -1,5 +1,13 @@
-1 Hello, world!
+1Hello, world!
 4
-2 Hello, world!
+2Hello, world!
 helowrd
 wrdhelo
+1ABC
+5
+2ABC
+abc
+cab
+3Hello
+h e l o
+1 2 3 4
