@@ -66,7 +66,6 @@ void container::Lenotext(ofstream &ofst) {
 }
 
 void container::Sort() {
-
     for (int i = 0; i < len; i++) {
         text *iter = head;
         while (iter != tail) {
@@ -99,7 +98,6 @@ void container::Sort() {
                 iter = iter->getNext();
         }
     }
-
 }
 
 void container::Clear() {

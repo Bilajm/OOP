@@ -12,4 +12,5 @@ public:
     int long long Lenotext();
     shift() {}
 };
+
 #endif //OOP_SHIFT_H

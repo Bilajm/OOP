@@ -22,7 +22,6 @@ public:
     void setNext(text *t) {next = t;}
     text* getPrev() {return prev;}
     void setPrev(text *t) {prev = t;}
-
 protected:
     text() {}
 };

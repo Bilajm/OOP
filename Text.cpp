@@ -26,6 +26,5 @@ text* text::In(ifstream &ifst) {
 
     sp->InData(ifst);
     return sp;
-
 }
 

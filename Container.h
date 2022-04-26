@@ -9,7 +9,6 @@ class container {
     text *head; // первый элемент
     text *tail; // послдний элемент
     int len; // текущая длина
-
 public:
     void In(ifstream &ifst); // ввод фигур
     void Out(ofstream &ofst); // вывод фигур
@@ -20,6 +19,5 @@ public:
     container(); // инициализация контейнера
     ~container() {Clear();} // утилизация контейнера
 };
-
 
 #endif //OOP_CONTAINER_H

@@ -14,5 +14,5 @@ public:
     int long long Lenotext();
     replace() {}
 };
-//first = new char[pairCount];
+
 #endif //OOP_REPLACE_H
