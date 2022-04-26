@@ -14,6 +14,7 @@ public:
     void In(ifstream &ifst); // ввод фигур
     void Out(ofstream &ofst); // вывод фигур
     void Clear(); // очистка контейнера от фигур
+    void OutRep(ofstream &ofst);
     //void push_back(text* t);
     container(); // инициализация контейнера
     ~container() {Clear();} // утилизация контейнера

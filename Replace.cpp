@@ -74,3 +74,7 @@ void replace::Out(ofstream &ofst) {
 
     ofst << endl << "Output text: " << repltext << endl;
 }
+
+void replace::OutRep(ofstream &ofst) {
+    Out(ofst);
+}

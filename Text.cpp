@@ -22,6 +22,8 @@ text* text::In(ifstream &ifst) {
 
     sp->InData(ifst);
     return sp;
-
 }
 
+void text::OutRep(ofstream &ofst) {
+    ofst << endl;
+}
