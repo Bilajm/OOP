@@ -1,11 +1,17 @@
 Filled container. 
 Container 2 elements.
+
 0: Input text:  Hello, world!
 Shift: 4
 Output text:  Lipps, asvph!
+Owner's name: Sergey
+
 1: Input text:  Hello, world!
 Starting characters: h e l o w r d 
 End symbols:         w r d h e l o 
 Output text:  Wrddh, ehldo!
+Owner's name: Andrey
+
 Empty container. 
 Container 0 elements.
+

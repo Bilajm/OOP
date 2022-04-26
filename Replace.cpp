@@ -42,6 +42,7 @@ string replace::transform(string otext, vector<pair<char, char>> A) {
 void replace::InData(ifstream &ifst) {
 
     string otext;
+    string owname;
     string a1;
     string a2;
     getline(ifst, otext);
@@ -56,6 +57,9 @@ void replace::InData(ifstream &ifst) {
     }
 
     repltext = transform(otext, AA);
+
+    ifst >> owname;
+    setowname(owname);
 }
 
 void replace::Out(ofstream &ofst) {
@@ -72,5 +76,6 @@ void replace::Out(ofstream &ofst) {
         ofst << i.second << ' ';
     }
 
-    ofst << endl << "Output text: " << repltext << endl;
+    ofst << endl << "Output text: " << repltext << endl
+            << "Owner's name: " << getowname() << endl;
 }
