@@ -41,11 +41,27 @@ void container::Out(ofstream &ofst) {
 
     text *t;
     t = head;
-    ofst << "Container " << len << " elements." << endl;
+    ofst << "Container " << len << " elements." << endl << endl;
     for(int i = 0; i < len; i++) {
         ofst << i << ": ";
         t->Out(ofst);
         t = t->getNext();
+        ofst << endl;
+    }
+}
+
+void container::Lenotext(ofstream &ofst) {
+
+    text *t;
+    t = head;
+    ofst << "Container " << len << " elements." << endl << endl;
+    for(int i = 0; i < len; i++) {
+        ofst << i << ": ";
+        t->Out(ofst);
+        ofst << "Message length: "
+             << t->Lenotext() << endl;
+        t = t->getNext();
+        ofst << endl;
     }
 }
 
@@ -59,19 +75,6 @@ void container::Clear() {
 
     len = 0;
     tail = nullptr;
-    /*
-    text *t;
-    t = head;
-    head = nullptr;
-    while (t != tail) {
-        t->getNext();
-        t->setPrev(nullptr);
-
-    }
-    t->setPrev(nullptr);
-    tail = nullptr;
-    len = 0;
-*/
 }
 
 
