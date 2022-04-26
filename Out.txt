@@ -1,27 +1,45 @@
 Filled container. 
-Container 2 elements.
+Container 4 elements.
 
-0: Input text:  Hello, world!
-Shift: 4
-Output text:  Lipps, asvph!
-Message length: 14
-
-1: Input text:  Hello, world!
+0: Input text: Hello, world!
 Starting characters: h e l o w r d 
 End symbols:         w r d h e l o 
-Output text:  Wrddh, ehldo!
-Message length: 14
+Output text: Wrddh, ehldo!
+Message length: 13
 
-Container 2 elements.
+1: Input text: Helo
+Shift: 8
+Output text: Pntw
+Message length: 4
 
-0: Input text:  Hello, world!
+2: Input text: world
+Shift: 6
+Output text: cuxrj
+Message length: 5
+
+3: Input text: Hello, world
 Shift: 4
-Output text:  Lipps, asvph!
+Output text: Lipps, asvph
+Message length: 12
 
-1: Input text:  Hello, world!
+Container 4 elements.
+
+0: Input text: Hello, world!
 Starting characters: h e l o w r d 
 End symbols:         w r d h e l o 
-Output text:  Wrddh, ehldo!
+Output text: Wrddh, ehldo!
+
+1: Input text: Hello, world
+Shift: 4
+Output text: Lipps, asvph
+
+2: Input text: world
+Shift: 6
+Output text: cuxrj
+
+3: Input text: Helo
+Shift: 8
+Output text: Pntw
 
 Empty container. 
 Container 0 elements.

@@ -65,6 +65,43 @@ void container::Lenotext(ofstream &ofst) {
     }
 }
 
+void container::Sort() {
+
+    for (int i = 0; i < len; i++) {
+        text *iter = head;
+        while (iter != tail) {
+            if (iter->Compare(*iter->getNext())) {
+                text *tmp = iter->getNext();
+                if (iter->getPrev() == nullptr) {
+                    tmp->getNext()->setPrev(iter);
+                    tmp->setPrev(iter->getPrev());
+                    iter->setNext(tmp->getNext());
+                    tmp->setNext(iter);
+                    iter->setPrev(tmp);
+                    head = tmp;
+                } else if (tmp->getNext() == nullptr) {
+                    iter->getPrev()->setNext(tmp);
+                    tmp->setPrev(iter->getPrev());
+                    iter->setNext(tmp->getNext());
+                    tmp->setNext(iter);
+                    iter->setPrev(tmp);
+                    tail = iter;
+                } else {
+                    iter->getPrev()->setNext(tmp);
+                    tmp->getNext()->setPrev(iter);
+                    tmp->setPrev(iter->getPrev());
+                    iter->setNext(tmp->getNext());
+                    tmp->setNext(iter);
+                    iter->setPrev(tmp);
+                }
+            }
+            if (iter != tail)
+                iter = iter->getNext();
+        }
+    }
+
+}
+
 void container::Clear() {
 
     while (head) {

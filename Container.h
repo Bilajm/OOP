@@ -15,6 +15,7 @@ public:
     void Out(ofstream &ofst); // вывод фигур
     void Lenotext(ofstream &ofst);
     void Clear(); // очистка контейнера от фигур
+    void Sort();
     //void push_back(text* t);
     container(); // инициализация контейнера
     ~container() {Clear();} // утилизация контейнера
