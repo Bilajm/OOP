@@ -23,7 +23,7 @@ public:
     string getowname() {return ownername;}
     text* getNext() {return next;}
     void setNext(text *t) {next = t;}
-    //text* getPrev() {return prev;}
+    text* getPrev() {return prev;}
     void setPrev(text *t) {prev = t;}
 protected:
     text() {}

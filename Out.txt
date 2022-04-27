@@ -1,0 +1,69 @@
+Filled container. 
+Container 5 elements.
+
+0: Input text:  Hello, world!
+Shift: 4
+Output text:  Lipps, asvph!
+Owner's name: Sergey
+Message length: 14
+
+1: Input text:  Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text:  Wrddh, ehldo!
+Owner's name: Andrey
+Message length: 14
+
+2: Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+Message length: 3
+
+3: Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+Message length: 3
+
+4: Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+Message length: 5
+
+Container 5 elements.
+
+0: Input text:  Hello, world!
+Shift: 4
+Output text:  Lipps, asvph!
+Owner's name: Sergey
+
+1: Input text:  Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text:  Wrddh, ehldo!
+Owner's name: Andrey
+
+2: Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+3: Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+4: Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+Empty container. 
+Container 0 elements.
+

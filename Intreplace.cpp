@@ -29,6 +29,7 @@ vector<int> intreplace::transform(string otext, vector<pair<char, int>> A) {
 void intreplace::InData(ifstream &ifst) {
 
     string otext;
+    string owname;
     string a1;
     vector<int> a2;
     getline(ifst, otext);
@@ -43,6 +44,8 @@ void intreplace::InData(ifstream &ifst) {
     }
     inttext = transform(otext, AX);
 
+    ifst >> owname;
+    setowname(owname);
 }
 
 void intreplace::Out(ofstream &ofst) {
@@ -63,5 +66,5 @@ void intreplace::Out(ofstream &ofst) {
     for (auto i : inttext) {
         ofst << i << " ";
     }
-    ofst << endl;
+    ofst << endl << "Owner's name: " << getowname() << endl;
 }
