@@ -7,6 +7,7 @@ using namespace std;
 
 class text {
     string opentext;
+    string ownername;
     text* next;
     text* prev;
 public:
@@ -18,9 +19,11 @@ public:
 
     void setStr(string otext) {opentext = otext;}
     string getStr() {return opentext;}
+    void setowname(string owname) {ownername = owname;}
+    string getowname() {return ownername;}
     text* getNext() {return next;}
     void setNext(text *t) {next = t;}
-    text* getPrev() {return prev;}
+    //text* getPrev() {return prev;}
     void setPrev(text *t) {prev = t;}
 protected:
     text() {}

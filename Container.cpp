@@ -21,22 +21,7 @@ void container::In(ifstream &ifst) {
         tail->setNext(nullptr);
     }
 }
-/*
-void container::push_back(text* t) {
-    if (len == 0) {
-        head = t;
-        tail = t;
-        len = 1;
-        return;
-    }
 
-    tail->setNext(t);
-    t->setPrev(this->tail);
-    tail = t;
-    len += 1;
-
-}
-*/
 void container::Out(ofstream &ofst) {
 
     text *t;

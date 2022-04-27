@@ -40,15 +40,19 @@ string shift::transform(string otext, int shift) {
 void shift::InData(ifstream &ifst) {
 
     string otext;
+    string owname;
     getline(ifst, otext);
     ifst >> shiftshar;
     setStr(otext);
     shifttext = transform(otext, shiftshar);
+    ifst >> owname;
+    setowname(owname);
 }
 
 void shift::Out(ofstream &ofst) {
 
     ofst << "Input text: " << getStr() << endl
         << "Shift: " << shiftshar << endl
-        << "Output text: " << shifttext << endl;
+        << "Output text: " << shifttext << endl
+        << "Owner's name: " << getowname() << endl;
 }

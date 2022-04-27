@@ -39,13 +39,16 @@ string replace::transform(string otext, vector<pair<char, char>> A) {
         } else if (!chektoup && cheknovec) {
             rtext.push_back(otext[i]);
         }
+
     }
+
     return rtext;
 }
 
 void replace::InData(ifstream &ifst) {
 
     string otext;
+    string owname;
     string a1;
     string a2;
     getline(ifst, otext);
@@ -59,6 +62,9 @@ void replace::InData(ifstream &ifst) {
         //AA.emplace_back(make_pair(a1[j], a2[j]));
     }
     repltext = transform(otext, AA);
+
+    ifst >> owname;
+    setowname(owname);
 }
 
 void replace::Out(ofstream &ofst) {
@@ -73,5 +79,7 @@ void replace::Out(ofstream &ofst) {
     for (auto & i : AA) {
         ofst << i.second << ' ';
     }
-    ofst << endl << "Output text: " << repltext << endl;
+
+    ofst << endl << "Output text: " << repltext << endl
+            << "Owner's name: " << getowname() << endl;
 }
