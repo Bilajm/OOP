@@ -5,6 +5,10 @@
 
 using namespace std;
 
+bool text::Compare(text &other) {
+    return Lenotext() < other.Lenotext();
+}
+
 text* text::In(ifstream &ifst) {
     text *sp;
     int k;
@@ -26,6 +30,5 @@ text* text::In(ifstream &ifst) {
 
     sp->InData(ifst);
     return sp;
-
 }
 

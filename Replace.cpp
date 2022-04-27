@@ -1,5 +1,11 @@
 #include "Replace.h"
 
+int long long replace::Lenotext() {
+
+    string otext = getStr();
+    return otext.length();
+}
+
 string replace::transform(string otext, vector<pair<char, char>> A) {
 
     string rtext = "";
@@ -33,9 +39,7 @@ string replace::transform(string otext, vector<pair<char, char>> A) {
         } else if (!chektoup && cheknovec) {
             rtext.push_back(otext[i]);
         }
-
     }
-
     return rtext;
 }
 
@@ -54,7 +58,6 @@ void replace::InData(ifstream &ifst) {
         AA[j] = make_pair(a1[j], a2[j]);
         //AA.emplace_back(make_pair(a1[j], a2[j]));
     }
-
     repltext = transform(otext, AA);
 }
 
@@ -65,12 +68,10 @@ void replace::Out(ofstream &ofst) {
     for (auto & i : AA) {
         ofst << i.first << ' ';
     }
-
     ofst << endl << "End symbols:         ";
 
     for (auto & i : AA) {
         ofst << i.second << ' ';
     }
-
     ofst << endl << "Output text: " << repltext << endl;
 }
