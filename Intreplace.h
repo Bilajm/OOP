@@ -13,6 +13,7 @@ public:
     void InData(ifstream &ifst);
     void Out(ofstream &ofst);
     static vector<int> transform(string otext, vector<pair<char, int>> A);
+    int long long Lenotext();
     intreplace() {}
 };
 
