@@ -26,6 +26,7 @@ int main(/*int argc, char* argv[]*/) {
     c.Lenotext(ofst);
     c.Sort();
     c.Out(ofst);
+    c.OutRep(ofst);
     c.Clear();
     ofst << "Empty container. " << endl;
     c.Out(ofst);

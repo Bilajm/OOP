@@ -85,6 +85,19 @@ void container::Sort() {
     }
 }
 
+void container::OutRep(ofstream &ofst) {
+
+    text *t;
+    t = head;
+    ofst << "Only replace." << endl << endl;
+    for(int i = 0; i < len; i++) {
+        ofst << i << ": ";
+        t->OutRep(ofst);
+        t = t->getNext();
+        ofst << endl;
+    }
+}
+
 void container::Clear() {
 
     while (head) {

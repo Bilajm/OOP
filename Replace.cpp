@@ -83,3 +83,7 @@ void replace::Out(ofstream &ofst) {
     ofst << endl << "Output text: " << repltext << endl
             << "Owner's name: " << getowname() << endl;
 }
+
+void replace::OutRep(ofstream &ofst) {
+    Out(ofst);
+}

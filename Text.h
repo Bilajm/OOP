@@ -14,6 +14,7 @@ public:
     static text* In(ifstream &ifst);
     virtual void InData(ifstream &ifst) = 0;
     virtual void Out(ofstream &ofst) = 0;
+    virtual void OutRep(ofstream &ofst);
     virtual int long long Lenotext() = 0;
     bool Compare(text &other);
 

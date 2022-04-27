@@ -12,6 +12,7 @@ public:
     void Out(ofstream &ofst);
     static string transform(string otext,vector<pair<char, char>> A);
     int long long Lenotext();
+    void OutRep(ofstream &ofst);
     replace() {}
 };
 

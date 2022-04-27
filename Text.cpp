@@ -32,3 +32,6 @@ text* text::In(ifstream &ifst) {
     return sp;
 }
 
+void text::OutRep(ofstream &ofst) {
+    ofst << endl;
+}
