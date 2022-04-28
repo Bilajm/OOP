@@ -15,7 +15,7 @@ public:
     virtual void InData(ifstream &ifst) = 0;
     virtual void Out(ofstream &ofst) = 0;
     virtual void OutRep(ofstream &ofst);
-    virtual int long long Lenotext() = 0;
+    int long long Lenotext();
     bool Compare(text &other);
 
     void setStr(string otext) {opentext = otext;}

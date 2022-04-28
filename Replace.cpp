@@ -1,11 +1,5 @@
 #include "Replace.h"
 
-int long long replace::Lenotext() {
-
-    string otext = getStr();
-    return otext.length();
-}
-
 string replace::transform(string otext, vector<pair<char, char>> A) {
 
     string rtext = "";

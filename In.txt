@@ -16,3 +16,14 @@ Ola
 h e l o
 1 2 3 4
 Vasya
+1Krasnoyarsk
+3
+Dybenski
+2abcdef
+abcdef
+zyxwvu
+Dybenski
+3abcdef
+a b c d e f
+26 25 24 23 22 21
+Dybenski

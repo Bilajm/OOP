@@ -9,7 +9,6 @@ public:
     void InData(ifstream &ifst);
     void Out(ofstream &ofst);
     static string transform(string otext, int shift);
-    int long long Lenotext();
     shift() {}
 };
 

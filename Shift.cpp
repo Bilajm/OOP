@@ -1,12 +1,6 @@
 #include "Shift.h"
 #include <string>
 
-int long long shift::Lenotext() {
-
-    string otext = getStr();
-    return otext.length();
-}
-
 string shift::transform(string otext, int shift) {
 
     string stext = "";

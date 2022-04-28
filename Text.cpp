@@ -35,3 +35,9 @@ text* text::In(ifstream &ifst) {
 void text::OutRep(ofstream &ofst) {
     ofst << endl;
 }
+
+int long long text::Lenotext() {
+
+    string otext = getStr();
+    return otext.length();
+}

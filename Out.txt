@@ -1,5 +1,5 @@
 Filled container. 
-Container 5 elements.
+Container 8 elements.
 
 0: Input text:  Hello, world!
 Shift: 4
@@ -34,7 +34,27 @@ Output text: 1 2 3 3 4
 Owner's name: Vasya
 Message length: 5
 
-Container 5 elements.
+5: Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+Message length: 11
+
+6: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+Message length: 6
+
+7: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+Message length: 6
+
+Container 8 elements.
 
 0: Input text:  Hello, world!
 Shift: 4
@@ -47,18 +67,35 @@ End symbols:         w r d h e l o
 Output text:  Wrddh, ehldo!
 Owner's name: Andrey
 
-2: Input text: Hello
+2: Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+3: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+4: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+5: Input text: Hello
 Starting characters: h e l o 
 End symbols:         1 2 3 4 
 Output text: 1 2 3 3 4 
 Owner's name: Vasya
 
-3: Input text: ABC
+6: Input text: ABC
 Shift: 5
 Output text: FGH
 Owner's name: Zlata
 
-4: Input text: ABC
+7: Input text: ABC
 Starting characters: a b c 
 End symbols:         c a b 
 Output text: CAB
@@ -76,9 +113,19 @@ Owner's name: Andrey
 
 2: 
 
-3: 
+3: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
 
-4: Input text: ABC
+4: 
+
+5: 
+
+6: 
+
+7: Input text: ABC
 Starting characters: a b c 
 End symbols:         c a b 
 Output text: CAB

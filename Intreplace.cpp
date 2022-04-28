@@ -1,11 +1,5 @@
 #include "Intreplace.h"
 
-int long long intreplace::Lenotext() {
-
-    string otext = getStr();
-    return otext.length();
-}
-
 vector<int> intreplace::transform(string otext, vector<pair<char, int>> A) {
 
     vector<int> itext;
