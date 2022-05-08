@@ -17,6 +17,7 @@ public:
     void Clear(); // очистка контейнера от фигур
     void Sort();
     void OutRep(ofstream &ofst);
+    void MultiMetod(ofstream &ofst);
     container(); // инициализация контейнера
     ~container() {Clear();} // утилизация контейнера
 };

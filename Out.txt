@@ -1,5 +1,5 @@
 Filled container. 
-Container 4 elements.
+Container 8 elements.
 
 1: Input text: Hello, world!
 Shift: 7
@@ -13,45 +13,93 @@ End symbols:         w r d h e l o
 Output text: Wrddh, ehldo!
 Owner's name: Andrey
 Message length: 13
-
-3: Input text: Hello
-Starting characters: h e l o 
-End symbols:         1 2 3 4 
-Output text: 1 2 3 3 4 
-Owner's name: Vasya
-Message length: 5
-
-4: Input text: abcdef
-Starting characters: a b c d e f 
-End symbols:         26 25 24 23 22 21 
-Output text: 26 25 24 23 22 21 
-Owner's name: Dybenski
-Message length: 6
-
-Container 4 elements.
-
-1: Input text: Hello, world!
-Shift: 7
-Output text: Olssv, dvysk!
-Owner's name: Sergey
-
-2: Input text: Hello, world!
-Starting characters: h e l o w r d 
-End symbols:         w r d h e l o 
-Output text: Wrddh, ehldo!
-Owner's name: Andrey
 
 3: Input text: abcdef
 Starting characters: a b c d e f 
 End symbols:         26 25 24 23 22 21 
 Output text: 26 25 24 23 22 21 
 Owner's name: Dybenski
+Message length: 6
 
-4: Input text: Hello
+4: Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+Message length: 3
+
+5: Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+Message length: 3
+
+6: Input text: Hello
 Starting characters: h e l o 
 End symbols:         1 2 3 4 
 Output text: 1 2 3 3 4 
 Owner's name: Vasya
+Message length: 5
+
+7: Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+Message length: 11
+
+8: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+Message length: 6
+
+Container 8 elements.
+
+1: Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+2: Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+3: Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+4: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+5: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+6: Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+7: Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+8: Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
 
 Only replace.
 
@@ -66,6 +114,394 @@ Owner's name: Andrey
 3: 
 
 4: 
+
+5: Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+6: 
+
+7: 
+
+8: Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+Multimetod.
+Shift and Replace
+
+Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+Shift and Shift
+
+Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+Shift and IntReplace
+
+Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+Shift and Replace
+
+Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+Shift and IntReplace
+
+Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+Shift and Shift
+
+Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+Shift and Replace
+
+Input text: Hello, world!
+Shift: 7
+Output text: Olssv, dvysk!
+Owner's name: Sergey
+
+Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+Replace and Shift
+
+Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+Replace and IntReplace
+
+Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+Replace and Replace
+
+Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+Replace and IntReplace
+
+Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+Replace and Shift
+
+Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+Replace and Replace
+
+Input text: Hello, world!
+Starting characters: h e l o w r d 
+End symbols:         w r d h e l o 
+Output text: Wrddh, ehldo!
+Owner's name: Andrey
+
+Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+Shift and IntReplace
+
+Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+Shift and Replace
+
+Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+Shift and IntReplace
+
+Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+Shift and Shift
+
+Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+Shift and Replace
+
+Input text: Krasnoyarsk
+Shift: 3
+Output text: Mudvprbduvm
+Owner's name: Dybenski
+
+Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+IntReplace and Replace
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+IntReplace and IntReplace
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+IntReplace and Shift
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+IntReplace and Replace
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         26 25 24 23 22 21 
+Output text: 26 25 24 23 22 21 
+Owner's name: Dybenski
+
+Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+Replace and IntReplace
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+Replace and Shift
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+Replace and Replace
+
+Input text: abcdef
+Starting characters: a b c d e f 
+End symbols:         z y x w v u 
+Output text: zyxwvu
+Owner's name: Dybenski
+
+Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+IntReplace and Shift
+
+Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+IntReplace and Replace
+
+Input text: Hello
+Starting characters: h e l o 
+End symbols:         1 2 3 4 
+Output text: 1 2 3 3 4 
+Owner's name: Vasya
+
+Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
+
+Shift and Replace
+
+Input text: ABC
+Shift: 5
+Output text: FGH
+Owner's name: Zlata
+
+Input text: ABC
+Starting characters: a b c 
+End symbols:         c a b 
+Output text: CAB
+Owner's name: Ola
 
 Empty container. 
 Container 0 elements.

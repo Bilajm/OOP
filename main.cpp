@@ -36,6 +36,7 @@ int main(/*int argc, char* argv[]*/) {
     c.Sort();
     c.Out(ofst);
     c.OutRep(ofst);
+    c.MultiMetod(ofst);
     c.Clear();
     ofst << "Empty container. " << endl;
     c.Out(ofst);

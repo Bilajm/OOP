@@ -7,6 +7,11 @@ helowrd
 wrdhelo
 Andrey
 
+3abcdef
+a b c d e f
+26 25 24 23 22 21
+Dybenski
+
 1ABC
 5
 Zlata
@@ -28,9 +33,4 @@ Dybenski
 2abcdef
 abcdef
 zyxwvu
-Dybenski
-
-3abcdef
-a b c d e f
-26 25 24 23 22 21
 Dybenski

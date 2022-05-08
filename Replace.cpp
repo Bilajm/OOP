@@ -60,6 +60,22 @@ void replace::InData(ifstream &ifst, int &len) {
     setowname(owname);
 }
 
+void replace::MultiMethod(text *other, ofstream &ofst) {
+    other->MMRepl(ofst);
+}
+
+void replace::MMShift(ofstream &ofst) {
+    ofst << "Shift and Replace" << endl;
+}
+
+void replace::MMRepl(ofstream &ofst) {
+    ofst << "Replace and Replace" << endl;
+}
+
+void replace::MMIntRep(ofstream &ofst) {
+    ofst << "IntReplace and Replace" << endl;
+}
+
 void replace::Out(ofstream &ofst) {
     ofst << "Input text: " << getStr() << endl
          << "Starting characters: ";

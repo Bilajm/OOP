@@ -18,6 +18,11 @@ public:
     int long long Lenotext();
     bool Compare(text &other);
 
+    virtual void MultiMethod(text *other, ofstream &ofst) = 0;
+    virtual void MMShift(ofstream &ofst) = 0;
+    virtual void MMRepl(ofstream &ofst) = 0;
+    virtual void MMIntRep(ofstream &ofst) = 0;
+
     void setStr(string otext) {opentext = otext;}
     string getStr() {return opentext;}
     void setowname(string owname) {ownername = owname;}

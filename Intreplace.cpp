@@ -43,6 +43,22 @@ void intreplace::InData(ifstream &ifst, int &len) {
     setowname(owname);
 }
 
+void intreplace::MultiMethod(text *other, ofstream &ofst) {
+    other->MMIntRep(ofst);
+}
+
+void intreplace::MMShift(ofstream &ofst) {
+    ofst << "Shift and IntReplace" << endl;
+}
+
+void intreplace::MMRepl(ofstream &ofst) {
+    ofst << "Replace and IntReplace" << endl;
+}
+
+void intreplace::MMIntRep(ofstream &ofst) {
+    ofst << "IntReplace and IntReplace" << endl;
+}
+
 void intreplace::Out(ofstream &ofst) {
     ofst << "Input text: " << getStr() << endl
          << "Starting characters: ";

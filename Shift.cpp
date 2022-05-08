@@ -52,6 +52,22 @@ void shift::InData(ifstream &ifst, int &len) {
     setowname(owname);
 }
 
+void shift::MultiMethod(text *other, ofstream &ofst) {
+    other->MMShift(ofst);
+}
+
+void shift::MMShift(ofstream &ofst) {
+    ofst << "Shift and Shift" << endl;
+}
+
+void shift::MMRepl(ofstream &ofst) {
+    ofst << "Replace and Shift" << endl;
+}
+
+void shift::MMIntRep(ofstream &ofst) {
+    ofst << "IntReplace and Shift" << endl;
+}
+
 void shift::Out(ofstream &ofst) {
 
     ofst << "Input text: " << getStr() << endl

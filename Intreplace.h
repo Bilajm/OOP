@@ -13,6 +13,11 @@ public:
     void InData(ifstream &ifst, int &len);
     void Out(ofstream &ofst);
     static vector<int> transform(string otext, vector<pair<char, int>> A);
+
+    void MultiMethod(text *other, ofstream &ofst);
+    void MMShift(ofstream &ofst);
+    void MMRepl(ofstream &ofst);
+    void MMIntRep(ofstream &ofst);
     intreplace() {}
 };
 

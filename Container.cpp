@@ -90,6 +90,24 @@ void container::Sort() {
     }
 }
 
+void container::MultiMetod(ofstream &ofst) {
+    ofst << "Multimetod." << endl;
+    text *first = head;
+    while (first != tail) {
+        text *second = first;
+        do {
+            second = second->getNext();
+            first->MultiMethod(second, ofst);
+            ofst << endl;
+            first->Out(ofst);
+            ofst << endl;
+            second->Out(ofst);
+            ofst << endl;
+        } while (second != tail);
+        first = first->getNext();
+    }
+}
+
 void container::OutRep(ofstream &ofst) {
 
     text *t;
