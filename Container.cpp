@@ -5,7 +5,7 @@ container::container() {len = 0; }
 void container::In(ifstream &ifst) {
     while(!ifst.eof()) {
         text *t;
-        if ((t = text::In(ifst)) != nullptr) {
+        if ((t = text::In(ifst, len)) != nullptr) {
             if (len == 0) {
                 head = t;
                 tail = t;
@@ -18,7 +18,12 @@ void container::In(ifstream &ifst) {
                 len++;
             }
         }
-        tail->setNext(nullptr);
+
+        if (head == nullptr) {
+            tail = nullptr;
+        } else {
+            tail->setNext(nullptr);
+        }
     }
 }
 
@@ -28,7 +33,7 @@ void container::Out(ofstream &ofst) {
     t = head;
     ofst << "Container " << len << " elements." << endl << endl;
     for(int i = 0; i < len; i++) {
-        ofst << i << ": ";
+        ofst << i + 1 << ": ";
         t->Out(ofst);
         t = t->getNext();
         ofst << endl;
@@ -41,7 +46,7 @@ void container::Lenotext(ofstream &ofst) {
     t = head;
     ofst << "Container " << len << " elements." << endl << endl;
     for(int i = 0; i < len; i++) {
-        ofst << i << ": ";
+        ofst << i + 1 << ": ";
         t->Out(ofst);
         ofst << "Message length: "
              << t->Lenotext() << endl;
@@ -91,7 +96,7 @@ void container::OutRep(ofstream &ofst) {
     t = head;
     ofst << "Only replace." << endl << endl;
     for(int i = 0; i < len; i++) {
-        ofst << i << ": ";
+        ofst << i + 1 << ": ";
         t->OutRep(ofst);
         t = t->getNext();
         ofst << endl;

@@ -39,7 +39,7 @@ string replace::transform(string otext, vector<pair<char, char>> A) {
     return rtext;
 }
 
-void replace::InData(ifstream &ifst) {
+void replace::InData(ifstream &ifst, int &len) {
 
     string otext;
     string owname;
@@ -49,7 +49,6 @@ void replace::InData(ifstream &ifst) {
     setStr(otext);
     getline(ifst, a1);
     getline(ifst, a2);
-
     AA.resize((a1.length()));
     for (int j = 0; j < a1.length(); j++) {
         AA[j] = make_pair(a1[j], a2[j]);

@@ -8,7 +8,7 @@ class replace: public text{
     vector<pair<char, char>> AA;
     string repltext;
 public:
-    void InData(ifstream &ifst);
+    void InData(ifstream &ifst, int &len);
     void Out(ofstream &ofst);
     static string transform(string otext,vector<pair<char, char>> A);
     void OutRep(ofstream &ofst);

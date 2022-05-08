@@ -6,7 +6,7 @@ class shift: public text{
     int shiftshar;
     string shifttext;
 public:
-    void InData(ifstream &ifst);
+    void InData(ifstream &ifst, int &len);
     void Out(ofstream &ofst);
     static string transform(string otext, int shift);
     shift() {}

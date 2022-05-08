@@ -10,7 +10,7 @@ class intreplace: public text {
     vector<pair<char, int>> AX;
     vector<int> inttext;
 public:
-    void InData(ifstream &ifst);
+    void InData(ifstream &ifst, int &len);
     void Out(ofstream &ofst);
     static vector<int> transform(string otext, vector<pair<char, int>> A);
     intreplace() {}

@@ -31,13 +31,22 @@ string shift::transform(string otext, int shift) {
     return stext;
 }
 
-void shift::InData(ifstream &ifst) {
+void shift::InData(ifstream &ifst, int &len) {
 
     string otext;
     string owname;
     getline(ifst, otext);
-    ifst >> shiftshar;
     setStr(otext);
+    ifst >> shiftshar;
+
+    if (ifst.fail()) {
+        ifst.clear();
+        string error;
+        getline(ifst, error);
+        cout << "Attention! Error reading element " << len + 1 << endl;
+        return;
+    }
+
     shifttext = transform(otext, shiftshar);
     ifst >> owname;
     setowname(owname);

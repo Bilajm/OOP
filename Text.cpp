@@ -9,10 +9,19 @@ bool text::Compare(text &other) {
     return Lenotext() < other.Lenotext();
 }
 
-text* text::In(ifstream &ifst) {
+text* text::In(ifstream &ifst, int &len) {
     text *sp;
     int k;
     ifst >> k;
+
+    if (ifst.fail()) {
+        ifst.clear();
+        string error;
+        getline(ifst, error);
+        cout << "Attention! Error reading element " << len + 1 << ". Check the correctness of input elements " << len << " and "<< len + 1 << "." << endl;
+        return nullptr;
+    }
+    //cout << "Good!" << endl;
 
     switch(k) {
         case 1:
@@ -28,7 +37,7 @@ text* text::In(ifstream &ifst) {
             return nullptr;
     }
 
-    sp->InData(ifst);
+    sp->InData(ifst, len);
     return sp;
 }
 

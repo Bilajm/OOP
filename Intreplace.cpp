@@ -20,7 +20,7 @@ vector<int> intreplace::transform(string otext, vector<pair<char, int>> A) {
     return itext;
 }
 
-void intreplace::InData(ifstream &ifst) {
+void intreplace::InData(ifstream &ifst, int &len) {
 
     string otext;
     string owname;
@@ -28,6 +28,7 @@ void intreplace::InData(ifstream &ifst) {
     vector<int> a2;
     getline(ifst, otext);
     setStr(otext);
+    //getline(ifst, a1);
     getline(ifst, a1);
 
     int x = a1.length() - (a1.length() - 1)/ 2;

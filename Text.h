@@ -11,8 +11,8 @@ class text {
     text* next;
     text* prev;
 public:
-    static text* In(ifstream &ifst);
-    virtual void InData(ifstream &ifst) = 0;
+    static text* In(ifstream &ifst, int &len);
+    virtual void InData(ifstream &ifst, int &len) = 0;
     virtual void Out(ofstream &ofst) = 0;
     virtual void OutRep(ofstream &ofst);
     int long long Lenotext();
